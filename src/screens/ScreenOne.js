@@ -85,16 +85,21 @@ TaskManager.defineTask(LOCATION_TASK_NAME, async ({ data, error }) => {
     return;
   }
   if (data) {
+    const { locations } = data;
+    console.log("Start ", locations);
     await axios
-      .post("https://jsonplaceholder.typicode.com/post/", data)
+      .post(
+        `https://hack-hr.herokuapp.com/api?lat=&${locations[0].coords.latitude}&long=${locations[0].coords.longitude}`
+      )
       .then((response) => {
-        console.log("This is reponsde" + response);
+        console.log("This is reponse " + response.data.success);
       })
       .catch((err) => {
         console.log("error" + err.message);
       });
-    const { locations } = data;
-    console.log(data);
+    console.log(
+      `https://hack-hr.herokuapp.com/api?lat=&${locations[0].coords.latitude}&long=${locations[0].coords.longitude}`
+    );
   }
 });
 
