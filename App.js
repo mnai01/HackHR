@@ -4,6 +4,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Feather } from "@expo/vector-icons";
 import ScreenOne from "./src/screens/ScreenOne";
+import ScreenThree from "./src/screens/ScreenThree";
 
 const Tab = createBottomTabNavigator();
 
@@ -38,7 +39,7 @@ export default function App() {
       >
         <Tab.Screen name="Screen One" component={ScreenOne} />
         <Tab.Screen name="Screen Two" component={ScreenOne} />
-        <Tab.Screen name="Screen Three" component={ScreenOne} />
+        <Tab.Screen name="Screen Three" component={ScreenThree} />
       </Tab.Navigator>
     </NavigationContainer>
   );
