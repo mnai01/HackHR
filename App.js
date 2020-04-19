@@ -20,10 +20,10 @@ export default function App() {
 
             if (route.name === "Screen One") {
               iconName = "settings";
-            } else if (route.name === "Screen Two") {
-              iconName = "home";
+            } else if (route.name === "GPS Tracking") {
+              iconName = "map-pin";
               // iconName = focused ? 'home' : 'anchor' // Use to change icon depending if that screen is currently selected or not
-            } else if (route.name === "Screen Three") {
+            } else if (route.name === "Code") {
               iconName = "github";
             }
 
@@ -37,9 +37,9 @@ export default function App() {
           inactiveTintColor: "gray",
         }}
       >
-        <Tab.Screen name="Screen One" component={ScreenOne} />
-        <Tab.Screen name="Screen Two" component={ScreenOne} />
-        <Tab.Screen name="Screen Three" component={ScreenThree} />
+        {/* <Tab.Screen name="Screen One" component={ScreenOne} /> */}
+        <Tab.Screen name="GPS Tracking" component={ScreenOne} />
+        <Tab.Screen name="Code" component={ScreenThree} />
       </Tab.Navigator>
     </NavigationContainer>
   );
