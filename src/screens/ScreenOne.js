@@ -157,12 +157,16 @@ export default MonitorLocation = () => {
               <View style={styles.row}>
                 <View style={[styles.detailBox, styles.half]}>
                   <Text style={styles.valueTitle}>Latitude</Text>
-                  <Text style={styles.detail}>{coords.latitude}</Text>
+                  <Text style={[styles.detail, styles.largeDetail]}>
+                    {coords.latitude}
+                  </Text>
                 </View>
 
                 <View style={[styles.detailBox, styles.half]}>
                   <Text style={styles.valueTitle}>Longitude</Text>
-                  <Text style={styles.detail}>{coords.longitude}</Text>
+                  <Text style={[styles.detail, styles.largeDetail]}>
+                    {coords.longitude}
+                  </Text>
                 </View>
               </View>
 
@@ -258,6 +262,7 @@ const styles = StyleSheet.create({
   detailBox: {
     padding: 15,
     justifyContent: "center",
+    alignItems: "center",
   },
   button: {
     flex: 1,
