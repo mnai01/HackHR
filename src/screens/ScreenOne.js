@@ -47,29 +47,38 @@ export default MonitorLocation = () => {
       <SafeAreaView style={styles.innerContainer}>
         <View style={styles.row}>
           <TouchableHighlight
+            activeOpacity={1}
+            underlayColor="#7aebe1"
             onPress={_onStartPress}
-            style={[styles.button, { backgroundColor: "#126312" }]}
+            style={[styles.button, { backgroundColor: "#00C7B7" }]}
           >
             <Text style={styles.buttonText}>Start</Text>
           </TouchableHighlight>
 
           <TouchableHighlight
+            activeOpacity={1}
+            underlayColor="#ff9ea7"
             onPress={_onStopPress}
-            style={[styles.button, { backgroundColor: "#881717" }]}
+            style={[styles.button, { backgroundColor: "#FB6875" }]}
           >
             <Text style={styles.buttonText}>Stop</Text>
           </TouchableHighlight>
         </View>
         {startNstop ? (
           <View>
+            <View style={styles.container}>
+              <Text style={{ fontSize: 20 }}>Tracking...</Text>
+            </View>
             <ActivityIndicator
-              style={styles.ScrollViewMessage}
+              style={styles.tracking}
               size="large"
               color="#0000ff"
             />
           </View>
         ) : (
-          <Text style={styles.container}>NOT TRACKING</Text>
+          <View style={styles.container}>
+            <Text style={{ fontSize: 20 }}>Not Tracking</Text>
+          </View>
         )}
       </SafeAreaView>
     </>
@@ -105,10 +114,8 @@ TaskManager.defineTask(LOCATION_TASK_NAME, async ({ data, error }) => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "red",
-    flexDirection: "row",
-    alignItems: "center",
     justifyContent: "center",
+    alignItems: "center",
   },
   innerContainer: {
     marginVertical: 30,
