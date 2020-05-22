@@ -31,8 +31,9 @@ Built with React Native and Expo.
 - When "start tracking" button is pressed, device will periodically send location data to the server via REST API
 
 ![Showcase](assets/Showcase.gif)
+
 ![MainPageWebAppMobileView](assets/MainPageWebAppMobileView.JPG)
-![AddFencePageMobileView](assets/AddFencePageMobileView.gif)
+![AddFencePageMobileView](assets/AddFencePageMobileView.JPG)
 
 ## Raspi Backend
 
