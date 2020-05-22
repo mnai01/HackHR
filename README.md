@@ -9,7 +9,8 @@ Project for the Human Resources Hackathon 2020
 - Ian Matlak, react: mobile and web
 - Joshua Obogbaimhe: backend API, database
 
-[## Web Application](https://github.com/mnai01/HackHR-Webapp)
+## [Web Application](https://github.com/mnai01/HackHR-Webapp)
+
 Built with React
 
 - Login page
