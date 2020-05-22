@@ -9,7 +9,7 @@ Project for the Human Resources Hackathon 2020
 - Ian Matlak, react: mobile and web
 - Joshua Obogbaimhe: backend API, database
 
-## [Web Application](https://github.com/mnai01/HackHR-Webapp)
+## [Web Application (Click Here)](https://github.com/mnai01/HackHR-Webapp)
 
 Built with React
 
@@ -36,7 +36,7 @@ Built with React Native and Expo.
 ![MainPageWebAppMobileView](assets/MainPageWebAppMobileView.JPG)
 ![AddFencePageMobileView](assets/AddFencePageMobileView.JPG)
 
-## Raspi Backend
+## [Raspi Backend (Click Here)](https://github.com/mnai01/HackHR-RasPi-Backend)
 
 Analyzes the number of wifi-enabled devices within a certain radius of the raspberry pi microcomputer.
 [View working prototype repo](https://github.com/mnai01/HackHR-RasPi-Backend)
